@@ -1,0 +1,37 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	   // String file = "C:\\Users\\skipperk\\Downloads\\NewBankAccounts.csv";
+	   // //read a csv file
+	   // List<String[]> newAccountHolders = csv.read(file);
+	   // for (String[] accountHolder : newAccountHolders) {
+	   //     System.out.println(accountHolder[0]);
+	   //     System.out.println(accountHolder[1]);
+
+	   // }
+
+		Checking chkacc1 = new Checking("Tom Wilson", "876567456", 1500);
+		
+		Savings savacc1 = new Savings("Rich Lowe", "567456234", 2500);
+		
+		//Read a CSV file and create new accounts based on that data
+		savacc1.compoundInterest();
+		savacc1.showInfo();
+	
+		System.out.println("**************************");
+		
+		chkacc1.compoundInterest();
+		chkacc1.showInfo();
+		
+		
+
+	}
+}
